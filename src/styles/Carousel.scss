@@ -1,0 +1,67 @@
+@import './colors';
+
+.car {
+    width: 100%;
+    height: 100vh;
+    background-color: $orange-section;
+    position: relative;
+    .arrows {
+        cursor: pointer;
+        color: $main-color;
+        .left{
+            position: absolute;
+            font-size: 50px;
+            top: 50%;
+            left: 1%;
+            
+        }
+        .right {
+            position: absolute;
+            right: 5%;
+            top: 50%;
+            font-size: 50px;
+        }
+    }
+    
+}
+.carousel {
+    opacity: 0;
+    transition-duration: 1s;
+    
+}
+.carousel.active {
+    opacity: 1;
+    transition-duration: 1s;
+    
+}
+
+
+.data-item {
+    color: $main-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .texts {
+        margin-top: 1rem;
+        p {
+            margin: 2rem;
+        }
+        
+    }
+    img {
+        width: 40%;
+        margin-top: 1rem;
+        
+    }
+
+
+    
+    
+    
+    
+
+    
+    
+    
+}
+
