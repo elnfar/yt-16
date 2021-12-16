@@ -1,0 +1,14 @@
+@mixin button {
+            cursor: pointer;
+            padding: 1rem 2rem;
+            background: transparent;
+            color: $main-color;
+            border: 1px solid $main-color;
+}
+
+@mixin hover {
+             transform: scale(130%);
+            transition: 1s ease-in-out;
+            background: $main-color;
+            color: $secondary-color;
+}

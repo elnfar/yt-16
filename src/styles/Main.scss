@@ -1,0 +1,46 @@
+@import './colors';
+@import './mixins';
+    
+
+
+.main {
+    width: 100%;
+    padding-bottom: 10rem;
+    background-color: $cream-color;
+}
+.center-text {
+    @include flex-center;
+    justify-content: center;
+    text-align: center;
+    h1 {
+        color: $gray-color;
+        margin-top: 2rem;
+        font-size: 4rem;
+    }
+}
+
+.allExp {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    justify-content: space-around;
+    gap: 3rem;
+    text-align: center;
+    .exps {
+        
+        align-items: center;
+        .gift {
+            align-items: center;
+            
+            
+            img {
+                border-radius: 60%;
+                background-color: rgb(219, 170, 170);
+                width: 5rem;
+                margin-left: 1rem;
+            }
+        }
+     }
+
+}
+

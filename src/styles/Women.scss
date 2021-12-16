@@ -1,0 +1,33 @@
+@import './colors';
+@import './buttons';
+
+.women-section {
+    width: 100%;
+    height: 100vh;
+    background-color: $cream-color;
+    background-repeat: no-repeat;
+
+
+    background-image: url('https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80');
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 2rem ;
+        color: $main-color;
+    }
+    .look {
+        margin: 15rem;
+        text-align: center;
+        color: $main-color;
+        font-size: 50px;
+        button {
+            @include button;
+        }
+        button:hover {
+            @include hover;
+        }
+    }
+
+}
